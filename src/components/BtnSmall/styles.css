@@ -1,0 +1,24 @@
+.btnSmall button{
+  width: fit-content;
+  border: none;
+  padding: 1.4vmin 3.5vmin;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  background-color: #148B98;
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+.btnSmall button:hover{
+  background-color: #117681;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+@media screen and (max-width: 550px){
+  .btnSmall button{
+    width: auto;
+    font-size: 3.2vmin;
+    padding: 3vmin 4vmin;
+  }
+}

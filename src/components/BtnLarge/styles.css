@@ -1,0 +1,24 @@
+.btnLarge button{
+  width: fit-content;
+  border: none;
+  padding: 2vmin 3vmin;
+  border-radius: 0.5rem;
+  font-size: 2.5vmin;
+  background-color: #148B98;
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+.btnLarge button:hover{
+  background-color: #117681;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+@media screen and (max-width: 550px){
+  .btnLarge button{
+    width: auto;
+    font-size: 3vmin;
+    padding: 3vmin 4vmin;
+  }
+}

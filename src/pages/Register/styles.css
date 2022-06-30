@@ -1,0 +1,73 @@
+.navRegister{
+  background-color: #79AFB8;
+}
+
+.mainRegister{
+  background-color: #79AFB8;
+  height: calc(100vh - 9vh);
+  display: grid;
+  gap: 10em;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.cabecalhoRegister{
+  padding-bottom: 15px;;
+}
+
+.cabecalhoRegister h1{
+  font-size: 3em;
+}
+
+.formsRegister{
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  padding: 60px 30px;
+  background-color: #1D201F;
+  border-radius: 10px;
+}
+
+.formsRegister form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.formsRegister input {
+  width: 25em;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  
+  border: 2px solid #79AFB8;
+  background-color: transparent;
+}
+
+input::placeholder,
+input::-webkit-input-placeholder {
+  color: #79AFB8;
+  opacity: 1;
+}
+
+.formsRegister button {
+  background-color: #148B98;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.linkLogarRegister{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.linkLoginRegister{
+  color: #79AFB8;
+  text-decoration: underline;
+  font-weight: bold;
+}

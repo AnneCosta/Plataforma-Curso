@@ -1,0 +1,73 @@
+.navLogin{
+  background-color: #79AFB8;
+}
+
+.mainLogin{
+  background-color: #79AFB8;
+  height: calc(100vh - 9vh);
+  display: grid;
+  gap: 10em;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.cabecalhoLogin{
+  padding-bottom: 15px;;
+}
+
+.cabecalhoLogin h1{
+  font-size: 3em;
+}
+
+.formsLogin{
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  padding: 60px 30px;
+  background-color: #1D201F;
+  border-radius: 10px;
+}
+
+.formsLogin form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.formsLogin input {
+  width: 25em;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  
+  border: 2px solid #79AFB8;
+  background-color: transparent;
+}
+
+input::placeholder,
+input::-webkit-input-placeholder {
+  color: #79AFB8;
+  opacity: 1;
+}
+
+.formsLogin button {
+  background-color: #148B98;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.linkCadastroLogin{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.linkRegisterLogin{
+  color: #79AFB8;
+  text-decoration: underline;
+  font-weight: bold;
+}
