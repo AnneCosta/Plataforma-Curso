@@ -5,7 +5,7 @@ import { About } from './pages/About'
 import { Home } from './pages/Home'
 import { Login } from './pages/Login'
 import { Register } from './pages/Register'
-import './global.css'
+import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

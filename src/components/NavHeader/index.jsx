@@ -5,7 +5,7 @@ export function NavHeader() {
   return (
     <div className='navLinks'>
       <Link to="/">
-        <img src="https://picsum.photos/700/200" alt="Logo do SecInfo" className='logo' />
+        <img src="#" alt="Logo do SecInfo" className='logo' />
       </Link>
       <nav>
         <a className='links' href="#">Cursos</a>
