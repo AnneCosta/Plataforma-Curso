@@ -4,14 +4,15 @@ Front-end de um projeto de desenvolvimento da plataforma de curso de segurança 
 ### Progresso de desenvolvimento 👩‍💻
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Telas do site 🖼️
+- [X] Home
 - [X] Login
 - [X] Cadastro
 - [X] Sobre
-- [X] Home
-- [ ] Lista de Cursos
-- [ ] Visão de Curso
+- [X] Contato
+- [X] Lista de Cursos
+- [X] Visão de Curso
 - [ ] Tela das aulas
-- [ ] Contato
+
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Banco de dados 💾
 

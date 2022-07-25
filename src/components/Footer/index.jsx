@@ -2,15 +2,15 @@ import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export function Footer() {
    return (
-      <footer className="p-10 rounded footer footer-center bg-base-200 text-base-content">
+      <footer className="p-10 rounded-t-sm footer footer-center bg-base-200 text-base-content">
          <div className="flex justify-center gap-4 pb-2 text-base">
-            <a className="hover:text-cBlue-300" href="/cursos">
+            <a className="font-medium hover:text-cBlue-300" href="/cursos">
                Cursos
             </a>
-            <a className="hover:text-cBlue-300" href="/sobre">
+            <a className="font-medium hover:text-cBlue-300" href="/sobre">
                Sobre
             </a>
-            <a className="hover:text-cBlue-300" href="/contato">
+            <a className="font-medium hover:text-cBlue-300" href="/contato">
                Contato
             </a>
          </div>
@@ -43,7 +43,8 @@ export function Footer() {
             </div>
          </div>
          <div>
-            <p className="text-sm">Fabianne Costa © 2022 - Todos os direitos reservados.</p>
+            <p className="text-sm">Fabianne Costa © 2022 - Todos os direitos reservados</p>
+            <p>Ilustrações por <a className="text-sm font-bold hover:text-cBlue-200" href="https://storyset.com/">Storyset</a></p>
          </div>
       </footer>
    );

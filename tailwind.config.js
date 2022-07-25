@@ -11,6 +11,9 @@ module.exports = {
         bgBlue: '#79AFB8',
         linkBlue: '#148B98',
         linkHover: '#35828f',
+        cGray: {
+          100: '#2D3130',
+        },
         cBlue: {
           default: '#b0d1d6',
           100: '#8bcbd6',

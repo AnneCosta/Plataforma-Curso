@@ -9,12 +9,12 @@ export function Register() {
          <div className="bg-cBlue-200">
             <NavHeader />
          </div>
-         <article className="grid items-center justify-center grid-cols-1 gap-3 text-white md:mx-auto md:container px-7 bg-cBlue-200 sm:grid-flow-col">
-            <section className="flex justify-center order-last md:order-none">
+         <article className="grid items-center justify-center grid-cols-1 gap-3 text-white pb-7 md:mx-auto lg:container px-7 bg-cBlue-200 sm:grid-cols-2">
+            <section className="flex justify-center order-last sm:order-none">
                <img className="w-full md:w-4/5" src="./imgLoginCadastro/Mobilelogin-pana.svg" alt="" />
             </section>
 
-            <section className="flex flex-col rounded-lg rounded-bl-[45px] text-end py-14 px-7 bg-bgColor">
+            <section className="flex flex-col rounded-lg rounded-bl-[45px] text-end py-14 px-7 xl:mx-16 md:px-10 xl:px-20 bg-bgColor">
                <section className="pb-3.5">
                   <h1 className="text-2xl font-medium">Cadastro</h1>
                   <p>
@@ -68,7 +68,7 @@ export function Register() {
                </p>
             </section>
          </article>
-			<div className="flex items-end ">
+			<div className="sm:fixed sm:bottom-0 sm:w-full">
 				<Footer />
 			</div>
       </main>

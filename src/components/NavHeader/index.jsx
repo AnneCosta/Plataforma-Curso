@@ -35,7 +35,7 @@ const linksMobile = [
 
 export function NavHeader() {
   return (
-    <Popover className="relative bg-bgBlue">
+    <Popover className="relative rounded-br-[35px] bg-bgBlue">
       <div className="px-4 mx-auto max-w-7xl sm:px-6">
         <div className="flex items-center justify-between py-6 marker:md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -43,7 +43,7 @@ export function NavHeader() {
               <span className="sr-only">Workflow</span>
               <img
                 className="w-auto h-16 sm:h-20"
-                src="Logo2.png"
+                src="/Logo2.png"
                 alt=""
               />
             </a>
@@ -67,7 +67,7 @@ export function NavHeader() {
           </Popover.Group>
           
           <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
-            <a href="/login" className="text-base font-medium text-bgColor whitespace-nowrap hover:text-gray-900">
+            <a href="/login" className="text-base font-medium text-bgColor whitespace-nowrap hover:text-cBlue-600">
               Login
             </a>
             <a

@@ -9,6 +9,29 @@
     @apply bg-cBlue-200;
     @apply h-screen;
   }
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #1D201F;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #148B98;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0d5961;
+  }
+
 }
 
 * {
@@ -25,3 +48,4 @@ body{
 a{
   text-decoration: none;
 }
+

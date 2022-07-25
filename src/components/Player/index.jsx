@@ -52,8 +52,8 @@ function usePlayerState($videoPlayer) {
 	}
 }
 
-const videoURL = '';
-export default function Player(){
+const videoURL = 'https://youtu.be/Gulxh-mLs_Q';
+export function Player(){
 	const $videoPlayer = useRef(null);
 	const { playerState, toggleVideoPlay, handleTimeUpdate, handleChangeVideoPercentage } = usePlayerState();
 
