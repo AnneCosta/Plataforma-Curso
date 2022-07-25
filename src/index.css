@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-cBlue-200;
+    @apply h-screen;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +20,6 @@
 body{
   font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #1D201F;
 }
 
 a{

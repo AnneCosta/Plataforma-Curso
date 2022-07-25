@@ -1,39 +1,76 @@
-import './styles.css'
-import { Link } from 'react-router-dom';
-import  { NavHeader } from './../../components/NavHeader'
+import "./styles.css";
+import { Link } from "react-router-dom";
+import { NavHeader } from "./../../components/NavHeader";
+import { Footer } from "../../components/Footer";
 
-export function Register(){
-  return(
-    <>
-      <div className='navRegister'>
-        <NavHeader/>
-      </div>
-      <main className='mainRegister'>
-      <section className='imageRegister'>
-        <img src="https://picsum.photos/600/500" alt="" />
-      </section>
+export function Register() {
+   return (
+      <main>
+         <div className="bg-cBlue-200">
+            <NavHeader />
+         </div>
+         <article className="grid items-center justify-center grid-cols-1 gap-3 text-white md:mx-auto md:container px-7 bg-cBlue-200 sm:grid-flow-col">
+            <section className="flex justify-center order-last md:order-none">
+               <img className="w-full md:w-4/5" src="./imgLoginCadastro/Mobilelogin-pana.svg" alt="" />
+            </section>
 
-      <section className='formsRegister'>
-        <section className='cabecalhoRegister'>
-          <h1>Cadastro</h1>
-          <p>Informe seus dados para <br/> criar sua conta.</p>
-        </section>
+            <section className="flex flex-col rounded-lg rounded-bl-[45px] text-end py-14 px-7 bg-bgColor">
+               <section className="pb-3.5">
+                  <h1 className="text-2xl font-medium">Cadastro</h1>
+                  <p>
+                     Informe seus dados para <br /> criar sua conta.
+                  </p>
+               </section>
 
-        <form action="">
-          <input type="text" placeholder='Nome Completo' name="text" id="text" />
-          <input type="email" placeholder='E-mail' name="email" id="email" />
-          <input type="password" placeholder='Senha' name="password" id="password" />
-          <input type="password" placeholder='Confirmação de senha' name="password" id="password" />
+               <form className="flex flex-col pt-2" action="">
+                  <input
+                     className="w-full p-2 mb-5 bg-transparent border-2 rounded-md text-md border-cBlue-300 placeholder:text-cBlue-300"
+                     type="text"
+                     placeholder="Nome Completo"
+                     name="text"
+                     id="text"
+                  />
+                  <input
+                     className="w-full p-2 mb-5 bg-transparent border-2 rounded-md text-md border-cBlue-300 placeholder:text-cBlue-300"
+                     type="email"
+                     placeholder="E-mail"
+                     name="email"
+                     id="email"
+                  />
+                  <input
+                     className="w-full p-2 mb-5 bg-transparent border-2 rounded-md text-md border-cBlue-300 placeholder:text-cBlue-300"
+                     type="password"
+                     placeholder="Senha"
+                     name="password"
+                     id="password"
+                  />
+                  <input
+                     className="w-full p-2 mb-5 bg-transparent border-2 rounded-md text-md border-cBlue-300 placeholder:text-cBlue-300"
+                     type="password"
+                     placeholder="Confirmação de senha"
+                     name="confPassword"
+                     id="confPassword"
+                  />
 
-          <button type="submit">Criar conta</button>
-        </form>
-        
-        <p className='linkLogarRegister'>
-          Já tem conta? &nbsp;
-          <Link className="linkLoginRegister" to="/login">Faça login</Link>  
-        </p>
-      </section>
-    </main>
-    </>
-  );
+                  <button 
+                     className="p-[10px] bg-cBlue-301 hover:bg-cBlue-400 rounded-md text-md"
+                     type="submit"
+                  >
+                     Criar conta
+                  </button>
+               </form>
+
+               <p className="pt-5 text-center">
+                  Já tem conta? &nbsp;
+                  <Link className="font-medium underline text-cBlue-301 hover:text-cBlue-400" to="/login">
+                     Faça login
+                  </Link>
+               </p>
+            </section>
+         </article>
+			<div className="flex items-end ">
+				<Footer />
+			</div>
+      </main>
+   );
 }
