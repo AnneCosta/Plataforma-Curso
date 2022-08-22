@@ -44,7 +44,7 @@ export function Footer() {
          </div>
          <div>
             <p className="text-sm">Fabianne Costa © 2022 - Todos os direitos reservados</p>
-            <p>Ilustrações por <a className="text-sm font-bold hover:text-cBlue-200" href="https://storyset.com/">Storyset</a></p>
+            <p className="text-sm">Ilustrações por <a className="text-sm font-bold hover:text-cBlue-200" href="https://storyset.com/">Storyset</a></p>
          </div>
       </footer>
    );

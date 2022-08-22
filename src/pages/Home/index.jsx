@@ -14,7 +14,7 @@ export function Home() {
             <section className="bg-bgBlue">
                <section className="container grid items-center grid-cols-1 px-6 py-6 mx-auto sm:grid-cols-2 md:px-10">
                   <div className="max-w-full text-center sm:text-left ">
-                     <h1 className="py-2 text-3xl text-center sm:text-left">
+                     <h1 className="py-2 text-3xl font-medium text-center sm:text-left">
                         Conheça os métodos para proteger suas informações no
                         mundo virtual
                      </h1>
@@ -23,7 +23,7 @@ export function Home() {
                         oficinas e entender a importância desse conhecimento.
                      </p>
                      <div className="py-1 sm:py-2">
-                        <BtnLarge title="Comece a aprender" />
+                        <BtnLarge link="/cursos" title="Comece a aprender" />
                      </div>
                   </div>
                   <div className="flex justify-center order-first sm:order-none">
@@ -45,7 +45,7 @@ export function Home() {
                      />
                   </div>
                   <div className="max-w-full text-center sm:text-left">
-                     <h2 className="py-2 text-2xl text-white sm:text-left">
+                     <h2 className="py-2 text-2xl font-medium text-white sm:text-left">
                         A segurança da sua informação digital está em suas mãos
                      </h2>
                      <p className="py-2 text-lg text-white">
@@ -54,7 +54,7 @@ export function Home() {
                         de prevenção a ataques.
                      </p>
                      <div className="py-1 sm:py-2">
-                        <BtnSmall title="Saiba mais" />
+                        <BtnSmall link="/sobre" title="Saiba mais" />
                      </div>
                   </div>
                </section>

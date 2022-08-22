@@ -30,10 +30,8 @@ export function CourseList() {
                         facilis accusantium, beatae ad hic ea, quam eaque eos
                         nisi.
                      </p>
-                     <div className="flex justify-end py-1 text-right sm:py-2">
-                        <Link to="/curso">
-                           <BtnSmall title="Ver curso" />
-                        </Link>
+                     <div className="py-1 sm:py-2">
+                        <BtnSmall link="/curso" title="Ver curso" />
                      </div>
                   </div>
                </section>
@@ -51,9 +49,7 @@ export function CourseList() {
                         minus at doloribus qui possimus. Ipsum, iusto amet?
                      </p>
                      <div className="py-1 sm:py-2">
-                        <Link to="/curso">
-                           <BtnSmall title="Ver curso" />
-                        </Link>
+                        <BtnSmall link="/curso" title="Ver curso" />
                      </div>
                   </div>
                   <div className="flex justify-center order-first sm:order-none">

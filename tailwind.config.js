@@ -17,6 +17,8 @@ module.exports = {
         cBlue: {
           default: '#b0d1d6',
           100: '#8bcbd6',
+          101: '#71A2AA',
+          102: '#a4d5de',
           200: '#79AFB8',
           300: '#6a99a1',
           301: '#148B98',

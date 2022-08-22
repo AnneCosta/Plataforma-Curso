@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export function CourseInfo() {
    return (
       <main>
-         <div className="bg-cBlue-200">
+         <div className="bg-bgColor">
             <NavHeader />
          </div>
          <article className="bg-bgColor">
@@ -29,7 +29,9 @@ export function CourseInfo() {
                illum saepe commodi rerum.
             </p>
             <div className="flex justify-center py-4">
-               <BtnSmall title="Iniciar curso" />
+               <Link to="/aulas">
+                  <BtnSmall title="Iniciar curso" />
+               </Link>
             </div>
          </section>
          <section className="py-10 bg-bgColor">
@@ -72,7 +74,9 @@ export function CourseInfo() {
                   </div>
                </section>
                <div className="py-4 ">
-                  <BtnSmall title="Iniciar curso" />
+                  <Link to="/aulas">
+                     <BtnSmall title="Iniciar curso" />
+                  </Link>
                </div>
             </section>
          </section>
