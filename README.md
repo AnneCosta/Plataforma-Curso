@@ -3,7 +3,7 @@ Front-end de um projeto de desenvolvimento da plataforma de curso de segurança 
 
 ### Progresso de desenvolvimento 👩‍💻
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Telas do site 🖼️
+#### Telas do site 🖼️
 - [X] Home
 - [X] Login
 - [X] Cadastro
@@ -11,16 +11,22 @@ Front-end de um projeto de desenvolvimento da plataforma de curso de segurança 
 - [X] Contato
 - [X] Lista de Cursos
 - [X] Visão de Curso
-- [ ] Tela das aulas
+- [X] Tela das aulas
 
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Banco de dados 💾
+#### Banco de dados 💾
 
 - [X] Criação do modelo lógico
-- [ ] Criação do modelo físico
+- [X] Criação do modelo físico
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; API ⚙️
+#### API ⚙️
 
-- [ ] Login
-- [ ] Cadastro
-- [ ] Comunicação com o banco
+- [X] Login
+- [X] Cadastro
+- [X] Comunicação com o banco
+
+#### Adaptações do front-end
+
+- [ ] Limitar visualização das aulas a usuário autenticado
+- [ ] Alterar NavBar para usuário autenticado
+- [ ] Inserir os dados reais no banco e vincular ao front-end

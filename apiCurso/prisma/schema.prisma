@@ -1,0 +1,65 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
+}
+
+datasource db {
+  provider             = "mysql"
+  url                  = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
+}
+
+model Users {
+  id         String   @id @default(cuid())
+  name       String
+  email      String   @unique
+  password   String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  Student_courses_progress Student_courses_progress[]
+}
+
+model Courses {
+  id           String   @id @default(cuid())
+  title        String
+  description  String
+  requirements String
+  learn        String
+  banner_url   String
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+
+  Chapters                 Chapters[]
+  Student_courses_progress Student_courses_progress[]
+}
+
+model Chapters {
+  id           String   @id @default(cuid())
+  name         String
+  video_url    String
+  description  String
+  sequence     String
+  course_id    String
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+
+  courses Courses @relation(fields: [course_id], references: [id])
+  @@index([course_id])
+}
+
+model Student_courses_progress {
+  id             String @id @default(cuid())
+  course_id      String
+  user_id        String
+  last_completed String
+
+  courses Courses @relation(fields: [course_id], references: [id])
+  users Users @relation(fields: [user_id], references: [id])
+
+  @@index([course_id])
+  @@index([user_id])
+}
